@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Outfit:wght@300;400&display=swap');
+
+:root {
+  --main-color: #ffffff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Mulish', sans-serif;
+}
+
+body {
+  min-height: 100svh;
+  background-color: #2d2d2d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 10%;
+}
+
+h1 {
+  font-family: 'Outfit', sans-serif;
+  color: var(--main-color);
+  font-size: 10vw;
+  margin-bottom: -2.5vh;
+  text-shadow:-3px -3px 0 cyan, 3px 3px 0 rgb(255, 0, 55);
+}
+
+p {
+  color : #e682ff;
+  text-transform: uppercase;
+  font-size: 4.5vw;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.container {
+  width: 100%;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+}
+
+.container .card {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #4b4b4b;
+  padding: 3.5rem 0 3rem;
+  border-bottom: 1rem solid #e682ff;
+}
+
+.container .card .counter {
+  font-family: 'Outfit', sans-serif;
+  letter-spacing: 3px;
+  color: #ffffff;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.container .card .caption {
+  font-family: 'Outfit', sans-serif;
+  color: #ffffffb4;
+  font-size: 1.3rem;
+}

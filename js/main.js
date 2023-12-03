@@ -20,4 +20,6 @@ function newYear() {
   secondEle.innerHTML = Math.floor((difference % minutesRef) / secondsRef);
 }
 
-setInterval(() => { newYear(); }, 1000);
+setInterval(() => {
+  newYear();
+}, 1000);
