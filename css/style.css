@@ -1,38 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Outfit:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 :root {
-  --main-color: #ffffff;
+  --main-color: #ffd84b;
+  --caption-color: #ffffff;
+  --first-bg-color: #a3262a;
+  --second-bg-color: #cc232a;
+  --shadow: #69000054;
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Mulish', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
   min-height: 100svh;
-  background-color: #2d2d2d;
+  background: linear-gradient(
+    to bottom,
+    var(--first-bg-color) 25%,
+    var(--second-bg-color) 100%
+  );
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 80px 10%;
+  padding: 50px 10%;
 }
 
 h1 {
-  font-family: 'Outfit', sans-serif;
   color: var(--main-color);
-  font-size: 10vw;
-  margin-bottom: -2.5vh;
-  text-shadow:-3px -3px 0 cyan, 3px 3px 0 rgb(255, 0, 55);
+  font-size: 9vw;
+  text-shadow: 5px 5px 5px var(--shadow);
 }
 
 p {
-  color : #e682ff;
+  color: var(--caption-color);
   text-transform: uppercase;
-  font-size: 4.5vw;
+  font-size: 5vw;
   font-weight: 700;
   margin-bottom: 3rem;
 }
@@ -45,27 +51,33 @@ p {
 }
 
 .container .card {
-  border-radius: 10px;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #4b4b4b;
-  padding: 3.5rem 0 3rem;
-  border-bottom: 1rem solid #e682ff;
+  background-color: var(--main-color);
+  padding-top: 3.5rem;
+  box-shadow: 5px 5px 5px var(--shadow);
 }
 
 .container .card .counter {
-  font-family: 'Outfit', sans-serif;
   letter-spacing: 3px;
-  color: #ffffff;
-  font-size: 4rem;
+  color: var(--first-bg-color);
+  font-size: 5.5rem;
   font-weight: 700;
-  margin-bottom: 15px;
 }
 
 .container .card .caption {
-  font-family: 'Outfit', sans-serif;
-  color: #ffffffb4;
-  font-size: 1.3rem;
+  color: var(--first-bg-color);
+  font-size: 1.5rem;
+  padding: 1rem 0 2rem;
+}
+
+.message {
+  display: none;
+  font-size: 10vw;
+  font-weight: 700;
+  color: var(--main-color);
+  text-shadow: 5px 5px 5px var(--shadow);
 }
