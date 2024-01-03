@@ -1,4 +1,4 @@
-const NEW_YEAR = new Date("Jan 1, 2024 00:00:00").getTime();
+const NEW_YEAR = new Date("Jan 1, 2025 00:00:00").getTime();
 
 const dayEle = document.querySelector("#day");
 const hourEle = document.querySelector("#hour");
